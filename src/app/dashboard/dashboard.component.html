@@ -1,0 +1,7 @@
+<div class="container">
+  <app-card
+    *ngFor="let book of books"
+    [book]="book"
+    (detailClickHandler)="goToDetail($event)"
+  ></app-card>
+</div>

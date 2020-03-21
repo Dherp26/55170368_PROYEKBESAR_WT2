@@ -1,0 +1,24 @@
+<mat-grid-list cols="4" >
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile class="book-image">
+    <img [src]="'../../assets/book/'+book.id+'.png'" [alt]="'Picture of ' + book.name"/>
+  </mat-grid-tile>
+  <mat-grid-tile class="book-stat">
+    <mat-grid-list cols="1">
+    <p>
+      <span class="category">ID</span>
+      <span class="value" >{{ book.id }}</span>
+    </p>
+    <p>
+      <span class="category">Name</span>
+      <span class="value">{{ book.name }}</span>
+    </p>
+    <p>
+      <span class="category">Type</span>
+      <span class="value">{{ book.price }}</span>
+    </p>
+  </mat-grid-list>
+  </mat-grid-tile>
+  <mat-grid-tile> </mat-grid-tile>
+</mat-grid-list>
+
